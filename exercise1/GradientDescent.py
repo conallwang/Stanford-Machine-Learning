@@ -1,7 +1,7 @@
 import numpy as np
 
-from exercise1.GetDerivative import *
-from exercise1.computeCost import *
+from src.exercise1.GetDerivative import *
+from src.exercise1.computeCost import *
 
 
 def GradientDescent(X, y, theta, alpha, num_iters, debug=False):

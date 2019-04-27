@@ -5,9 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model
 
-from exercise1.FeatureScale import *
-from exercise1.GradientDescent import *
-from exercise1.NormalEqution import *
+from src.exercise1.FeatureScale import *
+from src.exercise1.GradientDescent import *
+from src.exercise1.NormalEqution import *
 
 # ================ Part 1: Feature Normalization ================
 print('Loading data ...')

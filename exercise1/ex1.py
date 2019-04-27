@@ -2,9 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model
 
-from exercise1.warmUpExercise import *
-from exercise1.plotData import *
-from exercise1.GradientDescent import *
+from src.exercise1.warmUpExercise import *
+from src.exercise1.plotData import *
+from src.exercise1.GradientDescent import *
+from src.exercise1.computeCost import *
 
 # ==================== Part 1: Basic Function ====================
 print('Running warmUpExercise ...')
