@@ -31,10 +31,15 @@ ylabel = 'Exam 2 score'
 plotData(data, xlabel, ylabel)
 plt.show()
 
-# =================== Part 2: Gradient Descent ===============
+# =================== Part 2: Optimizing ===============
+# Gradient Descent has been realized in src/exercise2/gradientDescent.py
+# But in this situation, Gradient Descent is too slow to converge
+#
+# If you want to know how to realize Gradient Descent, you can refer to src/exercise2/gradientDescent.py
 
 initial_theta = np.zeros((n, 1))
 
+# Using scipy.optimize.minimize to solve
 res = minimize(costFunction, initial_theta, method='TNC', args=(x, y),
                options={'gtol': 1e-3, 'disp': True, 'maxiter': 1000})
 

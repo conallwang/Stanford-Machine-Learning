@@ -4,7 +4,7 @@ from src.exercise2.sigmoid import *
 
 def getDerivative(x, y, theta):
     """
-
+    computer all derivative of θ
     :param x:                       m×n
     :param y:                       m×1
     :param theta:                   n×1

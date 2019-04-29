@@ -5,13 +5,13 @@ from src.exercise2.getDerivative import *
 
 def gradientDescent(x, y, theta, alpha, iters):
     """
-
-    :param x:
-    :param y:
-    :param theta:
-    :param alpha:
-    :param iters:
-    :return:
+    Realize Gradient Descent, but it's to slow
+    :param x:               m×n
+    :param y:               m×1
+    :param theta:           n×1
+    :param alpha:           learing rate
+    :param iters:           the num of iters
+    :return:                (theta, J_history) % (new parameters theta, all J value in a list)
     """
     m, n = x.shape
 

@@ -31,6 +31,11 @@ plotData(data, xlabel, ylabel)
 plt.show()
 
 # ===================== Part 2: Optimize ======================
+# This time, I try to use gradient descent again
+# Fortunately, it has a good result.
+#
+# At the same time, there also are some codes about scipy.optimize.minimize
+# If you are interested in that, you can try.
 
 feature_x = mapFeature(x[:, 1], x[:, 2], 6)
 
@@ -41,6 +46,7 @@ l = 1
 print('The Cost of the initial theta: ', costFunctionReg(initial_theta, feature_x, y, l))
 print('The Gradient of the initial theta: ', getDerivativeReg(initial_theta, feature_x, y, l))
 
+# Using scipy.optimize.minimize
 # result = minimize(costFunctionReg, initial_theta, method='L-BFGS-B',
 #               jac=getDerivativeReg, args=(x, y, l),
 #               options={'gtol': 1e-4, 'disp': True, 'maxiter': 1000})

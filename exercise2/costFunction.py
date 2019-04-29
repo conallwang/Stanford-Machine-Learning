@@ -4,7 +4,7 @@ from src.exercise2.sigmoid import *
 
 def costFunction(theta, x, y):
     """
-    computer cost function
+    computer cost function of logistic regression
     :param x: x         m×n
     :param y: y         m×1
     :param theta: theta n×1

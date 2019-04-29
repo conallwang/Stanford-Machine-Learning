@@ -3,11 +3,11 @@ import numpy as np
 
 def mapFeature(x1, x2, degree=6):
     """
-
-    :param x1:
-    :param x2:
-    :param degree:
-    :return:
+    Map Feature, to generate features in any dimension
+    :param x1:          must be a matrix! if x1 is a num, just using numpy.reshape(1, 1) to convert
+    :param x2:          must be a matrix! if x2 is a num, just using numpy.reshape(1, 1) to convert
+    :param degree:      the dimension to generate
+    :return:            new features (generally high dimension)
     """
     m = x1.shape[0]
     res = np.ones((m, 1))

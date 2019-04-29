@@ -6,9 +6,15 @@ from src.exercise2.mapFeature import *
 
 def plotBoundary(x, theta):
     """
+    plot the boundary
 
-    :param theta:
-    :return:
+    if boundary is a line, just choose two points to draw the line
+
+    otherwise, boundary is non-linear
+    we use pyplot.contour to draw, just as show beneath
+
+    :param theta:       n×1
+    :return:            None
     """
     n_dimension = x.shape[1]
 

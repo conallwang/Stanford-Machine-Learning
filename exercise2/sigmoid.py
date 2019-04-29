@@ -4,7 +4,7 @@ import numpy as np
 
 def sigmoid(x):
     """
-    sigmoid function
+    sigmoid function(active function)
     :param x: param
     :return: sigmoid(x)
     """
