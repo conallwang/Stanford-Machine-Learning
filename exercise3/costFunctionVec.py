@@ -5,11 +5,11 @@ from src.exercise3.sigmoid import *
 
 def costFunctionVec(theta, x, y):
     """
-
-    :param theta:
-    :param x:
-    :param y:
-    :return:
+    compute the cost, vector form
+    :param theta:       n×1
+    :param x:           m×n
+    :param y:           m×1
+    :return:            the cost
     """
     m, n = x.shape
 

@@ -6,13 +6,13 @@ from src.exercise3.getDerivativeVecReg import *
 
 def oneVsAll(x, y, K, alpha, iters, l):
     """
-
-    :param x:
-    :param y:
-    :param alpha:
-    :param iters:
+    To train multi classification models (Using several Logistic Regression)
+    :param x:                   m×n
+    :param y:                   m×1
+    :param alpha:               learning rate
+    :param iters:               num of iters
     :param l:                   lambda
-    :return:
+    :return:                    The theta matrix (train result)
     """
     m, n = x.shape
 

@@ -5,10 +5,10 @@ from src.exercise3.sigmoid import *
 
 def predictOneVsAll(theta, x):
     """
-
-    :param theta:
-    :param x:
-    :return:
+    Using Logistic Regression to predict the classification
+    :param theta:           n×1
+    :param x:               m×n
+    :return:                the result of prediction
     """
     m, n = x.shape
     res = sigmoid(x.dot(theta[1:, :].T))

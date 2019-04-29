@@ -5,11 +5,14 @@ import matplotlib.pyplot as plt
 
 def plotData(x, disp_rows=10, disp_cols=10, padding=1):
     """
+    Plot the nums in train sets
 
-    :param data:
-    :param xlabel:
-    :param ylabel:
-    :return:
+    ** You need use plt.show() outside the function to see results
+    :param x:                   m×n
+    :param disp_rows:           determine how many rows to display
+    :param disp_cols:           determine how many cols to display
+    :param padding:             the padding between two graphics
+    :return:                    None
     """
     # Get example size
     m, n = x.shape

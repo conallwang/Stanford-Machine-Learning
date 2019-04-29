@@ -5,12 +5,12 @@ from src.exercise3.sigmoid import *
 
 def getDerivativeVecReg(theta, x, y, l):
     """
-
-    :param theta:
-    :param x:
-    :param y:
+    Get Derivative with regularization, vector form
+    :param theta:           n×1
+    :param x:               m×n
+    :param y:               m×1
     :param l:               lambda
-    :return:
+    :return:                The Derivative with regularization
     """
     m, n = x.shape
 

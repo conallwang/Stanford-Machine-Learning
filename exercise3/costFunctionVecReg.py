@@ -5,12 +5,12 @@ from src.exercise3.sigmoid import *
 
 def costFunctionVecReg(theta, x, y, l):
     """
-
-    :param theta:
-    :param x:
-    :param y:
+    compute the cost with regularization, vector form
+    :param theta:           n×1
+    :param x:               m×n
+    :param y:               m×1
     :param l:               lambda
-    :return:
+    :return:                the cost with regularization
     """
     m, n = x.shape
 

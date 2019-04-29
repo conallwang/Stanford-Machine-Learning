@@ -5,11 +5,11 @@ from src.exercise3.sigmoid import *
 
 def getDerivativeVec(theta, x, y):
     """
-
-    :param theta:
-    :param x:
-    :param y:
-    :return:
+    Get Derivative, vector form
+    :param theta:           n×1
+    :param x:               m×n
+    :param y:               m×1
+    :return:                The Derivative
     """
     m, n = x.shape
 
