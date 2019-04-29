@@ -1,5 +1,7 @@
 import numpy as np
 
+from src.exercise2.sigmoid import *
+
 
 def getDerivativeReg(theta, x, y, l):
     """
@@ -12,7 +14,7 @@ def getDerivativeReg(theta, x, y, l):
     """
     m, n = x.shape
 
-    h = x.dot(theta).reshape(m, 1)
+    h = sigmoid(x.dot(theta).reshape(m, 1))
     h_minux_y = np.subtract(h, y)
     res = np.zeros((n, 1))
     for i in range(n):

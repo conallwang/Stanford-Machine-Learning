@@ -7,6 +7,7 @@ from src.exercise2.mapFeature import *
 from src.exercise2.costFunctionReg import *
 from src.exercise2.getDerivativeReg import *
 from src.exercise2.gradientDescentReg import *
+from src.exercise2.plotBoundary import *
 
 # ================= Part 1: Visualizing the data ================
 
@@ -33,12 +34,12 @@ plt.show()
 
 feature_x = mapFeature(x[:, 1], x[:, 2], 6)
 
-initial_theta = np.ones((n, 1))
-num_iters = 1000
-alpha = 0.001
-l = 0
-print('The Cost of the initial theta: ', costFunctionReg(initial_theta, x, y, l))
-print('The Gradient of the initial theta: ', getDerivativeReg(initial_theta, x, y, l))
+initial_theta = np.zeros((feature_x.shape[1], 1))
+num_iters = 3000
+alpha = 0.3
+l = 1
+print('The Cost of the initial theta: ', costFunctionReg(initial_theta, feature_x, y, l))
+print('The Gradient of the initial theta: ', getDerivativeReg(initial_theta, feature_x, y, l))
 
 # result = minimize(costFunctionReg, initial_theta, method='L-BFGS-B',
 #               jac=getDerivativeReg, args=(x, y, l),
@@ -50,6 +51,11 @@ print('The Gradient of the initial theta: ', getDerivativeReg(initial_theta, x, 
 # print('The result theta: ', theta)
 
 # Gradient Descent
-theta, j_history = gradientDescentReg(x, y, initial_theta, alpha, l, num_iters)
+theta, j_history = gradientDescentReg(feature_x, y, initial_theta, alpha, l, num_iters)
 
 print('The result theta of gradient descent: ', theta)
+
+# plot Boundary
+plotData(data, xlabel, ylabel)
+plotBoundary(feature_x, theta)
+plt.show()

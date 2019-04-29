@@ -22,7 +22,7 @@ def gradientDescentReg(x, y, theta, alpha, l, iters):
         theta = theta - alpha * D
 
         J = costFunctionReg(theta, x, y, l)
-        print('%20s %10d' % ('The current cost: ', J))
+        print(J)
         J_history.append(J)
 
     return theta, J_history

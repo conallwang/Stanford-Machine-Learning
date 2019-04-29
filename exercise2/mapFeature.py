@@ -17,3 +17,5 @@ def mapFeature(x1, x2, degree=6):
             res = np.c_[res, plus]
 
     return res
+
+
